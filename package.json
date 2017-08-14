@@ -1,5 +1,5 @@
 {
-  "name": "hubot-darts",
+  "name": "hubot-poke",
   "version": "1.0.0",
   "description": "Get someones attention by doing a mention with a hilarious poke message.",
   "main": "index.coffee",
