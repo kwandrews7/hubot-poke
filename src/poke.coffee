@@ -15,12 +15,12 @@
 
 module.exports = (robot) ->
 
-  robot.respond /poke (.+)/i, (msg) ->
+  robot.respond /poke (.*)/i, (msg) ->
 
-    victimStr = msg.match[2]
-    victimStr = victimStr.substr(1) if victimStr.charAt(0) is '@'
+    victimName = msg.match[1]
+    victimName = victimName.substr(1) if victimName.charAt(0) is '@'
 
-    users = robot.brain.usersForFuzzyName(victimStr)
+    users = robot.brain.usersForFuzzyName(victimName)
     if users.length > 1
       msg.reply "Be more specific; I can only poke one person at a time!"
       return
@@ -31,9 +31,7 @@ module.exports = (robot) ->
       msg.reply "https://media1.giphy.com/media/6uGhT1O4sxpi8/giphy.gif"
       return
 
-    victimName = victim.name
-
-    msg.random [
+    msg.emote msg.random [
       "pokes @#{victimName}, who begins to writhe in pain!",
       "pokes @#{victimName}. #{victimName} shivers and ticks until he suddenly loses all surface tension.",
       "pokes @#{victimName}. Nothing happens.",
