@@ -1,0 +1,29 @@
+{
+  "name": "hubot-darts",
+  "version": "1.0.0",
+  "description": "Get someones attention by doing a mention with a hilarious poke message.",
+  "main": "index.coffee",
+  "author": {
+    "name": "Kyle Andrews",
+    "email": "kwandrews7@gmail.com",
+    "url": "https://github.com/kwandrews7"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "poke"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kwandrews7/hubot-poke",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwandrews7/hubot-poke.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kwandrews7/hubot-poke/issues"
+  },
+  "dependencies": {
+    "hubot": ">= 2.4.0",
+    "coffee-script": "~1.6"
+  }
+}
