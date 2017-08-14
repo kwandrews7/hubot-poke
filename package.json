@@ -1,6 +1,6 @@
 {
   "name": "hubot-poke",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get someones attention by doing a mention with a hilarious poke message.",
   "main": "index.coffee",
   "author": {
